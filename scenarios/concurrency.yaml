@@ -1,0 +1,12 @@
+name: concurrency
+description: Five independent instances of a 25-turn tool loop at once. Reports sampled aggregate peak memory and disk.
+kind: turns
+instances: 5
+turns: 25
+prompt_bytes: 256
+tool_calls_per_turn: 1
+tool_result_bytes: 4096
+checkpoint_every: 25
+pause_seconds: 2
+timeout_seconds: 600
+requires: [tools]

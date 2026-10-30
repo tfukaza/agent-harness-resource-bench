@@ -1,0 +1,13 @@
+name: retry-storm
+description: Five text turns; the server answers turn 2 with two 429s and turn 4 with two 500s before succeeding. Counts retries and backoff cost.
+kind: turns
+turns: 5
+prompt_bytes: 256
+tool_calls_per_turn: 0
+errors:
+  - {turn: 2, status: 429, count: 2, retry_after: 1}
+  - {turn: 4, status: 500, count: 2}
+checkpoint_every: 5
+pause_seconds: 2
+timeout_seconds: 300
+failure_is_finding: true   # a harness that gives up on 429/500 instead of retrying is the measurement

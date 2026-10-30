@@ -1,0 +1,11 @@
+name: tool-loop
+description: 50 turns, each a scripted bench_echo tool call returning 4 KiB, then a text reply. Isolates per-tool-call harness overhead.
+kind: turns
+turns: 50
+prompt_bytes: 256
+tool_calls_per_turn: 1
+tool_result_bytes: 4096
+checkpoint_every: 10
+pause_seconds: 2
+timeout_seconds: 600
+requires: [tools]

@@ -1,0 +1,10 @@
+name: long-session
+description: 200 short text-only turns. The RSS slope per turn is a leak detector; CPU per turn shows history re-serialisation cost.
+kind: turns
+turns: 200
+prompt_bytes: 128
+tool_calls_per_turn: 0
+checkpoint_every: 50
+pause_seconds: 2
+timeout_seconds: 900
+repeats: 2

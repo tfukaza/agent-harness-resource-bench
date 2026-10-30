@@ -1,0 +1,7 @@
+name: subagent
+description: A parent tool call spawns one child agent that makes three turns; measure incremental RSS, processes and requests. Planned; adapters do not register a subagent yet.
+kind: turns
+planned: true
+requires: [subagent]
+turns: 5
+timeout_seconds: 300

@@ -1,0 +1,6 @@
+name: idle
+description: Sit initialised for 60 s without sending a turn. Exposes background CPU, memory drift, and stray network traffic.
+kind: idle
+idle_seconds: 60
+timeout_seconds: 150
+repeats: 2

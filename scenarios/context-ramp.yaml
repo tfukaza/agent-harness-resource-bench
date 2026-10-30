@@ -1,0 +1,8 @@
+name: context-ramp
+description: Grow user history through 4 KiB, 256 KiB, 1 MiB and 4 MiB checkpoints in 256 KiB turns; no tools.
+kind: ramp
+targets: [4096, 262144, 1048576, 4194304]
+chunk: 262144
+pause_seconds: 2
+timeout_seconds: 240
+failure_is_finding: true   # Claude stops at its 1M-token window before 4 MiB; that is the measurement

@@ -1,0 +1,7 @@
+# Direct dependencies. requirements.lock is the pinned, installable set.
+psutil
+pyyaml
+google-adk
+langgraph
+langchain-openai
+pydantic-ai-slim[openai]

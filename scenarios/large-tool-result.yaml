@@ -1,0 +1,12 @@
+name: large-tool-result
+description: Three turns whose single tool call returns 4 KiB, 1 MiB and 8 MiB. Shows truncation, spooling to disk, and memory per result byte.
+kind: turns
+turns: 3
+prompt_bytes: 256
+tool_calls_per_turn: 1
+tool_result_bytes: [4096, 1048576, 8388608]
+checkpoint_every: 1
+pause_seconds: 2
+timeout_seconds: 300
+allow_truncation: true
+requires: [tools]

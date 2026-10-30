@@ -1,0 +1,4 @@
+name: startup
+description: Import the SDK and construct an agent; no model requests. Isolates runtime and framework initialisation.
+kind: startup
+timeout_seconds: 90

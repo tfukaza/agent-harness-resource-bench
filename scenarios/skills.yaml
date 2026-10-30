@@ -1,0 +1,7 @@
+name: skills
+description: Start with 0, 10 and 100 fixture skill files and measure startup delta and per-request system prompt growth. Planned; adapters do not load fixtures/skills yet.
+kind: startup
+planned: true
+requires: [skills]
+skills: {counts: [0, 10, 100], bytes: 2048}
+timeout_seconds: 120

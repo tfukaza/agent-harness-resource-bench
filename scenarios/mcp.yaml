@@ -1,0 +1,9 @@
+name: mcp
+description: Attach fixtures/mcp/server.py exposing 1 and 50 tools; measure extra processes, RSS, and tool-schema bytes per request. Planned; adapters do not attach the fixture yet.
+kind: turns
+planned: true
+requires: [mcp]
+turns: 10
+tool_calls_per_turn: 1
+mcp: {tool_counts: [1, 50]}
+timeout_seconds: 300

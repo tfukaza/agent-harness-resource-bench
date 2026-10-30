@@ -1,0 +1,11 @@
+name: streaming-hold
+description: Three text turns where the server dribbles 2000 stream events over about 30 s each. Measures CPU per streamed event and RSS while a connection is held.
+kind: turns
+turns: 3
+prompt_bytes: 256
+tool_calls_per_turn: 0
+stream: {pieces: 2000, interval_ms: 15}
+checkpoint_every: 1
+pause_seconds: 2
+timeout_seconds: 400
+repeats: 1
