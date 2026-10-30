@@ -34,6 +34,12 @@ HARNESSES = {
         'tool_mechanism': 'built-in shell tool reading a fixture file (SDK has no in-process custom tools)',
         'capabilities': {'tools': True, 'mcp': True, 'subagent': False, 'skills': True},
     },
+    'pi': {
+        'label': 'Pi coding agent SDK (Node)',
+        'runtime': 'node', 'entry': 'harnesses/pi/agent.mjs', 'protocol': 'chat',
+        'tool_mechanism': 'in-process custom tool (customTools)',
+        'capabilities': {'tools': True, 'mcp': True, 'subagent': False, 'skills': True},
+    },
     'claude': {
         'label': 'Claude Agent SDK (Node + native CLI)',
         'runtime': 'node', 'entry': 'harnesses/claude/agent.mjs', 'protocol': 'anthropic',

@@ -47,7 +47,7 @@ def versions():
     info = {}
     try:
         lock = json.loads((ROOT / 'package-lock.json').read_text())
-        for name in ('ai', '@ai-sdk/openai', '@openai/codex-sdk', '@openai/codex', '@anthropic-ai/claude-agent-sdk', 'zod'):
+        for name in ('ai', '@ai-sdk/openai', '@openai/codex-sdk', '@openai/codex', '@anthropic-ai/claude-agent-sdk', '@earendil-works/pi-coding-agent', 'zod'):
             entry = lock.get('packages', {}).get('node_modules/' + name)
             if entry:
                 info[name] = entry.get('version')

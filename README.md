@@ -17,6 +17,7 @@ remain are harness overhead.
 | `langgraph` | LangGraph prebuilt ReAct agent | Python | OpenAI Chat Completions | in-process function |
 | `pydantic` | Pydantic AI | Python | OpenAI Chat Completions | in-process function |
 | `vercel` | Vercel AI SDK `ToolLoopAgent` | Node | OpenAI Chat Completions | in-process function |
+| `pi` | Pi coding agent SDK (`@earendil-works/pi-coding-agent`, pi.dev) | Node, one in-process `AgentSession` per trial | OpenAI Chat Completions via a provider registered on `ModelRuntime` | in-process `customTools` entry; built-in tools disabled by the `tools` allowlist |
 | `codex` | OpenAI Codex SDK | Node + native binary, one `codex exec` per turn | OpenAI Responses | built-in shell tool that `cat`s a fixture file (the SDK has no in-process custom tools) |
 | `claude` | Claude Agent SDK | Node + native CLI, one streaming-input session per trial | Anthropic Messages | in-process SDK MCP server (`createSdkMcpServer`) |
 
